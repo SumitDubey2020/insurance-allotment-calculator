@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Benifits Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="header">Flexible Benefits Solution</div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12">
+                    <div class="row mb-4 mx-2 health-card-row">
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                           
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                           <h6 class="card-head">Health</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-1">
+                                <h6>100</h6>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 1</h5>
+                                    <input type="checkbox" name="" id="h-crd-1" data-multiplier="1" data-tableId="1"value="100" data-name="Benefit 1">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-2">
+                                <label for="">200</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 2 (Default)</h5>
+                                    <input type="checkbox" name="" id="h-crd-2" checked="true" value="200" data-multiplier="2" data-tableId="2" data-name="Benefit 2">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-3">
+                                <label for="">300</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 3</h5>
+                                    <input type="checkbox" name="" id="" value="300" data-multiplier="4" data-tableId="3" data-name="Benefit 3">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-4">
+                                <label for="">400</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 4</h5>
+                                    <input type="checkbox" name="" id="" value="400" data-multiplier="4" data-tableId="4" data-name="Benefit 4">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                           
+                        </div>
+                    </div>
+                    <div class="row mb-4 mx-2 life-card-row">
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                           
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <h6 class="card-head">Life</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-1">
+                                <h6>300</h6>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 1</h5>
+                                    <input type="checkbox" name="" id="" value="300" data-multiplier="0.5" data-tableId="5" data-name="Benefit 1">
+                                    
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X0.5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-2">
+                                <label for="">400</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 2 (Default)</h5>
+                                    <input type="checkbox" name="" id="" checked="true" value="400" data-multiplier="1" data-tableId="6" data-name="Benefit 2">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-3">
+                                <label for="">450</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 3</h5>
+                                    <input type="checkbox" name="" id="" value="450" data-multiplier="2" data-tableId="7" data-name="Benefit 3">
+                                    
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-4">
+                                <label for="">600</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 4</h5>
+                                    <input type="checkbox" name="" id="" value="600" data-multiplier="1" data-tableId="8" data-name="Benefit 4">
+                                    <div class="details">
+                                        <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                           
+                        </div>
+                    </div>
+                    <div class="row mb-4 mx-2 accident-card-row">
+                        <div class="col-lg-1">
+                           
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <h6 class="card-head">Accident</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-1">
+                                <h6>100</h6>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 1</h5>
+                                    <input type="checkbox" name="" id="" value="100" data-multiplier="1" data-tableId="9" data-name="Benefit 1">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-2">
+                                <label for="">250</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 2</h5>
+                                    <input type="checkbox" name="" id="" value="250" data-multiplier="1" data-tableId="10" data-name="Benefit 2">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-3">
+                                <label for="">600</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 3 (Default)</h5>
+                                    <input type="checkbox" name="" id="" checked="true" value="600" data-multiplier="1" data-tableId="11" data-name="Benefit 3">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="card-benefits card-4">
+                                <label for="">750</label>
+                                <div class="card-content">
+                                    <h5 for="">Benefit 4 </h5>
+                                    <input type="checkbox" name="" id="" value="750" data-multiplier="1" data-tableId="12" data-name="Benefit 4">
+                                </div>
+                                <div class="details">
+                                    <div class="items item-1">Details</div><div class="items item-2">X1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
+                    <h3>Wallet Allocation:1400</h3>
+                    <table class="allocation-table">
+                        <tr>
+                            <th>Point</th>
+                            <th>Multiplier</th>
+                            <th>Total</th>
+                        </tr>
+                       
+                        <tr>
+                            <td></td>
+                            <td>total</td>
+                            <td id="grd_total"></td>
+                        </tr>
+                       
+
+                    </table>
+                    <table class="wallet-bal-tbl">
+                        <tr>
+                            <td>Wallet Amount</td>
+                            <td id="wallet_amt">1400</td>
+                        </tr>
+                        <tr>
+                            <td>Used</td>
+                            <td id="used"></td>
+                        </tr>
+                        <tr>
+                            <td>Available</td>
+                            <td id="available"></td>
+                        </tr>
+                        <tr>
+                            <td>You Pay</td>
+                            <td id="you_pay"></td>
+                        </tr>
+                    </table>
+
+                    <div class="chckout-div">
+                        <button class="chckout_btn" id="chck_btn">Checkout</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="invoice-tbl-container">
+                <table class="invoice-tbl" id="inv_tbl">
+                    <tr>
+                        <th colspan="5" class="text-center fl-bn-sol-head">Flexible Benefits Solution - Invoice</th>
+                    </tr>
+                    <tr>
+                        <th>Benefit</th>
+                        <th>Description</th>
+                        <th>Points</th>
+                        <th>Multiplier</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td id="inv_pnt"></td>
+                        <td></td>
+                        <td id="inv_amt"></td>
+                    </tr>
+                   
+                </table>
+                
+                    
+                        <button class="prnt_pdf" id="pdf">Print PDF</button>
+                    
+                </tr>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./src/main.js"></script>
+</html>

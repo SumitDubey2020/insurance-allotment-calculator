@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card-benefits{
+   padding:10px;
+    height:100%;
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width:150px;
+}
+
+.card-content{
+    text-align: center;
+    flex-grow:1;
+}
+.details{
+    display:flex;
+}
+.items{
+    flex-grow: 1;
+}
+.health-card-row .card-2{
+    background: linear-gradient(to bottom, rgba(207, 224, 249, 1) 0%, 3.435114398598671%, rgba(201, 219, 246, 1) 6.870228797197342%, 53.43511439859867%, rgba(147, 181, 228, 1) 100%);
+
+    ;
+}
+.life-card-row .card-2{
+    background:linear-gradient(to bottom, rgba(204, 229, 199, 1) 0%, 13.199999928474426%, rgba(197, 225, 185, 1) 26.399999856948853%, 63.199999928474426%, rgba(167, 214, 142, 1) 100%);
+
+}
+.accident-card-row .card-3{
+    background:linear-gradient(to bottom, rgba(255, 239, 193, 1) 0%, 24.100719392299652%, rgba(254, 231, 160, 1) 48.201438784599304%, 74.10071939229965%, rgba(255, 221, 122, 1) 100%);
+
+}
+.card-head {
+    transform: rotate(270deg);
+}
+.allocation-table{
+   
+    border-collapse: collapse;
+    
+}
+table{
+    width:70%;
+}
+.allocation-table td,.allocation-table th{
+    border:1px solid black;
+    padding:5px;
+    text-align: center;
+}
+.wallet-bal-tbl{
+    margin-top:20px;
+    border:1px solid black;
+}
+.wallet-bal-tbl td{
+    padding:5px;
+   
+}
+.chckout-div{
+    margin:30px;
+   
+}
+.chckout_btn{
+    background-color: #006600;
+    color:#fff;
+    font-size:18px;
+    font-weight: 700;
+    padding:5px;
+    width:70%;
+}
+.invoice-tbl{
+    border-collapse: collapse;
+}
+.invoice-tbl th,.invoice-tbl td{
+    border:1px solid black;
+    padding:5px;
+    text-align: center;
+}
+.fl-bn-sol-head{
+    background-color: #006600;
+    color:#fff;
+    font-size:20px;
+    font-weight: 700;
+    padding:10px;
+
+}
+.invoice-tbl-container{
+    display:none;
+}
+.prnt_pdf{
+    background-color: #006600;
+    color:#fff;
+    font-size:18px;
+    font-weight: 700;
+    padding:5px;
+    
+}
+
+@media  (max-width:425px) {
+    .card-head{
+        transform: rotate(360deg);
+    }
+    .card-benefits{
+        width:100%;
+    }
+}
